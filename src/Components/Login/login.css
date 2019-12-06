@@ -1,0 +1,28 @@
+.Login{
+    color: whitesmoke;
+}
+
+.Login-Parent{
+    height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.form-row{
+    margin: .5rem;
+
+}
+
+.child-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input.child-row{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
