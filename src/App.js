@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Splash from './Components/Splash'
 import Login from './Components/Login'
 import Signup from './Components/Signup'
 import NavBar from './Components/NavBar'
 import Home from './Components/Home'
-import './App.css';
+import './App.css'
 import { Route, Switch } from 'react-router-dom'
 import {withRouter} from 'react-router-dom'
 
