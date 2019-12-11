@@ -1,11 +1,12 @@
 
 body {
-    background-color: rgb(48, 49, 51);
+    background-color: rgb(1, 1,	1);
 }
 
 h1 {
     color: whitesmoke;
     font-family: 'Racing Sans One', cursive;
     align-content: center;
+    font-size: 5rem;
 }
 

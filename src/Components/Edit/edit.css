@@ -1,0 +1,13 @@
+.editClass{
+    height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+}
+
+Button{
+    display: inline-flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    margin: 3rem;
+}

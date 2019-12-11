@@ -87,9 +87,8 @@ class Home extends Component {
                         Click for dispensaries
                     </button>
                 </form>
-                    <input type="text" name="edit" onChange={this.handleChange} />
-                    <button onClick={this.editPage}>=>Click to edit profile</button>
-                    <button onClick={this.delete}>Click to delete</button>
+                <button onClick={this.editPage}>Edit Profile</button>
+                <button onClick={this.delete}>Delete Profile</button>
             </div>
         )
     }

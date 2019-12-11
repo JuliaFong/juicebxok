@@ -5,7 +5,7 @@ import Signup from './Components/Signup'
 import NavBar from './Components/NavBar'
 import Home from './Components/Home'
 import Edit from './Components/Edit'
-import Delete from './Components/Delete'
+import Footer from './Components/Footer'
 import './App.css'
 import { Route, Switch } from 'react-router-dom'
 import { withRouter } from 'react-router-dom'
@@ -25,7 +25,11 @@ class App extends Component {
     signupPassword: "",
   }
   
- 
+  updateCurrentUser = (currentUser) => {
+    this.setState({
+      currentUser: currentUser
+    })
+  }
 
   handleLoginSubmit = async (e) => {
     e.preventDefault();
@@ -94,9 +98,9 @@ handleSignupChange = (e) => {
           <Route exact path={'/login'} render={() => <Login handleLoginSubmit={this.handleLoginSubmit} handleLoginChange={this.handleLoginChange} />} />
           <Route exact path={'/signup'} render={() => <Signup handleSignupSubmit={this.handleSignupSubmit} handleSignupChange={this.handleSignupChange} />} />
           <Route exact path={'/home'} render={(props) => <Home currentUser={this.state.currentUser} {...props}/>} />
-          <Route exact path={'/edit'} render={() => <Edit currentUser={this.state.currentUser} />} />
-          <Route exact path={'/delete'} render={() => <Delete currentUser={this.state.currentUser} />} />
+          <Route exact path={'/edit'} render={() => <Edit currentUser={this.state.currentUser}  updateCurrentUser={this.updateCurrentUser}/>} />
         </Switch>
+        <Footer />
       </div>
     );
   }
