@@ -4,9 +4,12 @@ import Login from './Components/Login'
 import Signup from './Components/Signup'
 import NavBar from './Components/NavBar'
 import Home from './Components/Home'
+import Edit from './Components/Edit'
+import Delete from './Components/Delete'
 import './App.css'
 import { Route, Switch } from 'react-router-dom'
-import {withRouter} from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
+import { faRubleSign } from '@fortawesome/free-solid-svg-icons'
 
 
 class App extends Component {
@@ -21,6 +24,8 @@ class App extends Component {
     signupLocation: "",
     signupPassword: "",
   }
+  
+ 
 
   handleLoginSubmit = async (e) => {
     e.preventDefault();
@@ -78,6 +83,8 @@ handleSignupChange = (e) => {
 
 
 
+
+
   render () {
     return (
       <div className="App">
@@ -86,7 +93,9 @@ handleSignupChange = (e) => {
           <Route exact path={'/'} component={ Splash } />
           <Route exact path={'/login'} render={() => <Login handleLoginSubmit={this.handleLoginSubmit} handleLoginChange={this.handleLoginChange} />} />
           <Route exact path={'/signup'} render={() => <Signup handleSignupSubmit={this.handleSignupSubmit} handleSignupChange={this.handleSignupChange} />} />
-          <Route exact path={'/home'} render={() => <Home currentUser={this.state.currentUser} />} />
+          <Route exact path={'/home'} render={(props) => <Home currentUser={this.state.currentUser} {...props}/>} />
+          <Route exact path={'/edit'} render={() => <Edit currentUser={this.state.currentUser} />} />
+          <Route exact path={'/delete'} render={() => <Delete currentUser={this.state.currentUser} />} />
         </Switch>
       </div>
     );

@@ -6,6 +6,7 @@
     height: 100vh;
     display: inline-flex;
     flex-direction: column;
+    font-family: 'Raleway', sans-serif;
 }
 
 .form-row{

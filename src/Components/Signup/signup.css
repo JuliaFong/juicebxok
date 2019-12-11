@@ -1,9 +1,12 @@
 .signup{
     color: whitesmoke;
 }
-
+.Sign-up{
+    font-family: 'Righteous', cursive;
+}
 .Signup-Parent{
     height: 100vh;
     display: inline-flex;
     flex-direction: column;
+    font-family: 'Raleway', sans-serif;
 }

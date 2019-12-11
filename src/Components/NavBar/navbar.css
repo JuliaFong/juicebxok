@@ -1,6 +1,8 @@
 .navbar {
     display: flex;
     justify-content: flex-end;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 .nav-link {

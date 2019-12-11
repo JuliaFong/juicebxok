@@ -1,7 +1,9 @@
 body {
-    background-color: black
+    background-color: rgb(48, 49, 51);
 }
 
 h1 {
     color: whitesmoke;
+    font-family: 'Racing Sans One', cursive;
+    align-content: center;
 }

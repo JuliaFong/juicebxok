@@ -11,6 +11,7 @@ import './signup.css'
             signupEmail: '',
             signupLocation: '',
             signupPassword: ''
+           
      }
         
     }
@@ -19,15 +20,17 @@ import './signup.css'
     render() {
         return(
             <div className="signup">
-                <h1>Sign up</h1>
+                <div className="Sign-up">
+                    <h2>Sign Up</h2>
+                </div>
                 <form onSubmit ={this.props.handleSignupSubmit}>
                     <div className="Signup-Parent">
                         <div className="form-row">
-                            <label>First name</label>
+                            <label>First Name</label>
                             <input type="text" name="signupFirstName" className="child-row" onChange={this.props.handleSignupChange} />
                         </div>
                         <div className="form-row">
-                            <label>Last name</label>
+                            <label>Last Name</label>
                             <input type="text" name="signupLastName" className="child-row" onChange={this.props.handleSignupChange} />
                         </div>
                         <div className="form-row">
