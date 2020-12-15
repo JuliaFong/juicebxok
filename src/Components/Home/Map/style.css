@@ -4,14 +4,14 @@
     top: 5%;
 }
 
-.Map{
+.Map {
     height: 80vh;
     display: flex;
     justify-content: center;
 }
 
-button {
-     display:inline-block;
+homeButton {
+    display:flex-box;
     padding:0.35em 1.2em;
     border:0.1em solid #FFFFFF;
     margin:0 0.3em 0.3em 0;
@@ -19,12 +19,18 @@ button {
     box-sizing: border-box;
     text-decoration:none;
     font-family: 'Raleway', sans-serif;
-    font-weight: 100%;
-     color:#FFFFFF;
+    font-weight: 200%;
+    color:#FFFFFF;
     text-align:center;
     transition: all 0.2s;
 }
 
-button:hover{
+homeButton:hover{
     color:#000000;
+    display: flexbox;
+    justify-content: center;
+}
+
+.icon {
+    color: rgb(146,	198, 68)
 }

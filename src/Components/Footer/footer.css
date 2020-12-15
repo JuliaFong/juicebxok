@@ -1,0 +1,10 @@
+footer{
+    display: flex;
+   justify-content: center;
+   color:red;
+}
+
+footer .icon {
+    color: red;
+    padding: 30px;
+}

@@ -1,7 +1,3 @@
-* {
-  color: white;
-}
-
 button, input{
   color: black;
 }
@@ -27,4 +23,8 @@ button, input{
 
 .App-link {
   color: #09d3ac;
+}
+
+.icon {
+  color: rgb(146,	198, 68);
 }

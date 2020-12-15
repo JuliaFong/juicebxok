@@ -4,24 +4,28 @@
 
 .Login-Parent{
     height: 100vh;
+    width: 1px;
+    margin: -6rem;
     display: inline-flex;
     flex-direction: column;
+    justify-content: center;
     font-family: 'Raleway', sans-serif;
 }
 
 .form-row{
     margin: .5rem;
+    justify-content: center;
 
 }
 
 .child-row{
-    display: flex;
+    display: flexbox;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .input.child-row{
-    display: flex;
+    display: flexbox;
   flex-direction: column;
   align-items: center;
   justify-content: center;

@@ -41,7 +41,7 @@ class Map extends Component {
                                     latitude={dispensary.coordinates.latitude}
                                     longitude={dispensary.coordinates.longitude}
                                 >
-                                    <FontAwesomeIcon className="icon" icon={faCannabis} color={cannabisColor} size="1x" />
+                                <FontAwesomeIcon className="icon" icon={faCannabis} color={cannabisColor} size="1x" />
                                 </Marker>
                             )
                         }) : ''

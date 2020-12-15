@@ -6,10 +6,13 @@ import NavBar from './Components/NavBar'
 import Home from './Components/Home'
 import Edit from './Components/Edit'
 import Footer from './Components/Footer'
+import Location from './Components/Location'
 import './App.css'
 import { Route, Switch } from 'react-router-dom'
 import { withRouter } from 'react-router-dom'
 import { faRubleSign } from '@fortawesome/free-solid-svg-icons'
+import mapboxgl from 'mapbox-gl'
+// import { geolocated } from "react-geolocated"
 
 
 class App extends Component {
@@ -99,6 +102,7 @@ handleSignupChange = (e) => {
           <Route exact path={'/signup'} render={() => <Signup handleSignupSubmit={this.handleSignupSubmit} handleSignupChange={this.handleSignupChange} />} />
           <Route exact path={'/home'} render={(props) => <Home currentUser={this.state.currentUser} {...props}/>} />
           <Route exact path={'/edit'} render={() => <Edit currentUser={this.state.currentUser}  updateCurrentUser={this.updateCurrentUser}/>} />
+          {/* <Route exact path={'/location'} render={() => <Location currentUser={this.state.currentUser} locationCurrentUser={this.locationCurrentUser}/>} /> */}
         </Switch>
         <Footer />
       </div>
